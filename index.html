@@ -93,7 +93,7 @@ footer{margin-top:36px;color:var(--mut);font-size:13px;text-align:center}
 </head>
 <body>
 <header><div class="in">
-<h1>Tabayyun Hub</h1>
+<h1>Tabayyun Hub by Ikhsanny</h1>
 <p>Alat bantu interaktif untuk mahasiswa agar bijak bermedia sosial: periksa informasi, bersopan santun, dan jaga lisan, berlandaskan QS. Al-Hujurat ayat 6, 11, dan 12.</p>
 </div></header>
 <nav><div class="in"><a href="#cek">Cek Tabayyun</a><a href="#pesan">Pesan ke Dosen</a><a href="#kuis">Kuis Sebelum Komen</a><a href="#survei">Hasil Survei</a></div></nav>
@@ -158,7 +158,7 @@ function greet(){var h=new Date().getHours();return h<11?"pagi":h<15?"siang":h<1
 $("gen").onclick=function(){
 var nm=$("nm").value.trim(),nim=$("nim").value.trim(),ds=$("ds").value.trim(),sp=$("sp").value,mk=$("mk").value.trim(),kp=$("kp").value,dt=$("dt").value.trim();
 if(!nm||!nim||!ds){alert("Lengkapi nama, NIM, dan nama dosen terlebih dahulu.");return}
-var t="Assalamu’alaikum warahmatullahi wabarakatuh. Selamat "+greet()+", "+sp+" "+ds+".\n\nPerkenalkan, saya "+nm+" (NIM "+nim+")"+(mk?", mahasiswa mata kuliah "+mk:"")+". Mohon izin, saya ingin "+kp+"."+(dt?"\n\n"+dt:"")+"\n\nDemikian yang dapat saya sampaikan. Mohon maaf mengganggu waktu "+sp+". Atas perhatian dan tanggapannya, saya ucapkan terima kasih.\n\nWassalamu’alaikum warahmatullahi wabarakatuh.";
+var t="Assalamu’alaikum warahmatullahi wabarakatuh. Selamat "+greet()+", "+sp+" "+ds+".\n\nPerkenalkan, saya "+nm+" dengan NIM "+nim+")"+(mk?", mahasiswa mata kuliah "+mk:"")+". Mohon izin, saya ingin "+kp+"."+(dt?"\n\n"+dt:"")+"\n\nDemikian yang dapat saya sampaikan. Mohon maaf mengganggu waktu "+sp+". Atas perhatian dan tanggapannya, saya ucapkan terima kasih.\n\nWassalamu’alaikum warahmatullahi wabarakatuh.";
 $("out").textContent=t;$("out").hidden=false;$("cp").hidden=false;
 var h=new Date().getHours(),w=$("hr");
 if(h>=21||h<6){w.textContent="Sekarang sudah larut. Sebaiknya kirim pesan ini pada jam wajar (sekitar pukul 07.00–20.00), dan hindari hari libur.";w.hidden=false}else w.hidden=true};
