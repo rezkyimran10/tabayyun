@@ -5,6 +5,35 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Tabayyun Hub: Etika Komunikasi Digital Mahasiswa</title>
 <style>
+  .opt {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: var(--card);
+  color: var(--tx);
+  border: 1px solid var(--bd);
+  margin: 8px 0 0;
+  opacity: 1;
+}
+
+.opt:disabled {
+  color: var(--tx);
+  opacity: 0.95;
+  cursor: default;
+}
+
+.opt.ok {
+  border: 2px solid var(--ok);
+  background: var(--g2);
+  color: var(--tx);
+  font-weight: 600;
+}
+
+.opt.no {
+  border: 2px solid var(--no);
+  background: var(--card);
+  color: var(--tx);
+}
 :root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
 --bg:#f4f7f2;--card:#ffffff;--tx:#1f2a24;--mut:#5b6a60;--g:#1b5e3b;--g2:#e3efe7;--y:#e0a82e;--bd:#d5ddd6;--ok:#1b7a47;--no:#b3402f;color-scheme:light}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121a15;--card:#1b261f;--tx:#e8efe9;--mut:#9fb0a5;--g:#5fbf8a;--g2:#22352a;--y:#e8b84a;--bd:#2e4035;--ok:#6fd49a;--no:#f08a78;color-scheme:dark}}
