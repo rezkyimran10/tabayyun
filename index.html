@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tabayyun Hub: Etika Komunikasi Digital Mahasiswa</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#f4f7f2;--card:#ffffff;--tx:#1f2a24;--mut:#5b6a60;--g:#1b5e3b;--g2:#e3efe7;--y:#e0a82e;--bd:#d5ddd6;--ok:#1b7a47;--no:#b3402f;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121a15;--card:#1b261f;--tx:#e8efe9;--mut:#9fb0a5;--g:#5fbf8a;--g2:#22352a;--y:#e8b84a;--bd:#2e4035;--ok:#6fd49a;--no:#f08a78;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121a15;--card:#1b261f;--tx:#e8efe9;--mut:#9fb0a5;--g:#5fbf8a;--g2:#22352a;--y:#e8b84a;--bd:#2e4035;--ok:#6fd49a;--no:#f08a78;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*:before,*:after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:"Segoe UI",system-ui,-apple-system,Calibri,sans-serif;line-height:1.55}
+.wrap{max-width:820px;margin:0 auto;padding:0 16px 40px}
+header{background:var(--g);color:#fff;padding:28px 16px 22px;border-bottom:5px solid var(--y)}
+header .in{max-width:820px;margin:0 auto}
+header h1{margin:0 0 6px;font-family:Georgia,"Times New Roman",serif;font-size:clamp(26px,6vw,36px)}
+header p{margin:0;opacity:.92;max-width:600px}
+:root[data-theme="dark"] header,:root:not([data-theme="light"]) header{}
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--card);border-bottom:1px solid var(--bd);z-index:5;overflow-x:auto;white-space:nowrap}
+nav .in{max-width:820px;margin:0 auto;padding:0 8px}
+nav a{display:inline-block;padding:12px 12px;color:var(--g);text-decoration:none;font-weight:600;font-size:14px}
+nav a:hover{background:var(--g2)}
+section{margin-top:28px}
+h2{font-family:Georgia,"Times New Roman",serif;color:var(--g);margin:0 0 4px;font-size:24px}
+.sub{color:var(--mut);margin:0 0 14px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:16px;margin-bottom:12px}
+.ayat{border-left:5px solid var(--y);font-style:italic}
+.ayat small{display:block;font-style:normal;color:var(--mut);margin-top:6px}
+label{display:block;font-weight:600;margin:10px 0 4px;font-size:14px}
+input,select,textarea{width:100%;font:inherit;color:var(--tx);background:var(--bg);border:1px solid var(--bd);border-radius:8px;padding:9px 10px}
+textarea{min-height:90px;resize:vertical}
+button{font:inherit;font-weight:600;background:var(--g);color:#fff;border:0;border-radius:8px;padding:10px 16px;cursor:pointer;margin-top:12px}
+:root[data-theme="dark"] button,:root:not([data-theme="light"]) button{color:#0f1a13}
+button.alt{background:var(--g2);color:var(--g);margin-left:6px}
+.chk{display:flex;gap:10px;align-items:flex-start;padding:10px;border:1px solid var(--bd);border-radius:10px;margin-bottom:8px;cursor:pointer;background:var(--card)}
+.chk input{width:20px;height:20px;margin-top:3px;flex:none;accent-color:var(--g)}
+.chk b{display:block}.chk span{color:var(--mut);font-size:14px}
+.verdict{padding:12px 14px;border-radius:10px;font-weight:600;margin-top:10px;background:var(--g2)}
+.bar{display:flex;align-items:center;gap:10px;margin:9px 0;font-size:14px}
+.bar .n{width:42%;flex:none}.bar .t{flex:1;background:var(--g2);border-radius:6px;height:22px;overflow:hidden}
+.bar .f{height:100%;background:var(--g);color:#fff;font-size:12px;display:flex;align-items:center;justify-content:flex-end;padding-right:6px;border-radius:6px}
+.bar .f.low{background:var(--y);color:#1f2a24}
+.opt{display:block;width:100%;text-align:left;background:var(--card);color:var(--tx);border:1px solid var(--bd);margin:8px 0 0}
+.opt.ok{border-color:var(--ok);background:var(--g2)}.opt.no{border-color:var(--no)}
+.fb{margin-top:10px;padding:10px 12px;border-radius:10px;background:var(--g2);font-size:15px}
+.warn{color:var(--no);font-weight:600;margin-top:8px}
+pre{white-space:pre-wrap;font:inherit;background:var(--bg);border:1px dashed var(--bd);border-radius:10px;padding:12px;margin:12px 0 0}
+footer{margin-top:36px;color:var(--mut);font-size:13px;text-align:center}
+@media (max-width:520px){.bar .n{width:46%}}
+</style>
+</head>
+<body>
+<header><div class="in">
+<h1>Tabayyun Hub</h1>
+<p>Alat bantu interaktif untuk mahasiswa agar bijak bermedia sosial: periksa informasi, bersopan santun, dan jaga lisan, berlandaskan QS. Al-Hujurat ayat 6, 11, dan 12.</p>
+</div></header>
+<nav><div class="in"><a href="#cek">Cek Tabayyun</a><a href="#pesan">Pesan ke Dosen</a><a href="#kuis">Kuis Sebelum Komen</a><a href="#survei">Hasil Survei</a></div></nav>
+<div class="wrap">
+
+<section id="cek">
+<h2>Cek Tabayyun</h2>
+<p class="sub">Sebelum membagikan informasi, centang langkah yang sudah kamu lakukan.</p>
+<div class="card ayat">“Wahai orang-orang yang beriman, jika seorang fasik datang kepadamu membawa berita penting, maka telitilah kebenarannya agar kamu tidak mencelakakan suatu kaum karena ketidaktahuan(-mu) yang berakibat kamu menyesali perbuatanmu itu.”<small>QS. Al-Hujurat [49]: 6 (Kementerian Agama RI, 2019)</small></div>
+<div id="steps"></div>
+<div class="verdict" id="vd">Centang langkah di atas untuk melihat hasilnya.</div>
+</section>
+
+<section id="pesan">
+<h2>Generator Pesan ke Dosen</h2>
+<p class="sub">Isi data, lalu salin pesan yang sopan dan lengkap dengan salam serta identitas.</p>
+<div class="card">
+<label for="nm">Nama kamu</label><input id="nm" placeholder="Nama lengkap">
+<label for="nim">NIM</label><input id="nim" inputmode="numeric" placeholder="Nomor induk mahasiswa">
+<label for="ds">Dosen yang dituju</label><input id="ds" placeholder="Contoh: Dr. Lara Agnesta Putri, M.Pd.I.">
+<label for="sp">Sapaan</label><select id="sp"><option>Ibu</option><option>Bapak</option></select>
+<label for="mk">Mata kuliah dan kelas</label><input id="mk" placeholder="Contoh: Pendidikan Agama Islam, Kelas A">
+<label for="kp">Keperluan</label>
+<select id="kp"><option value="menanyakan informasi perkuliahan">Menanyakan informasi perkuliahan</option><option value="mengonfirmasi tugas">Mengonfirmasi tugas</option><option value="memohon bimbingan">Memohon bimbingan</option><option value="memohon izin tidak dapat mengikuti perkuliahan">Izin tidak dapat hadir</option><option value="mengumpulkan tugas">Mengumpulkan tugas</option></select>
+<label for="dt">Detail singkat</label><textarea id="dt" placeholder="Jelaskan maksudmu dengan jelas dan singkat"></textarea>
+<button id="gen">Buat Pesan</button>
+<div id="hr" class="warn" hidden></div>
+<pre id="out" hidden></pre>
+<button class="alt" id="cp" hidden>Salin Pesan</button>
+</div>
+</section>
+
+<section id="kuis">
+<h2>Kuis “Sebelum Kamu Komen”</h2>
+<p class="sub">Pilih respons terbaik pada setiap situasi. <span id="sc"></span></p>
+<div class="card" id="qz"></div>
+<div class="card ayat">“…janganlah suatu kaum mengolok-olok kaum yang lain (karena) boleh jadi mereka yang diolok-olokkan itu lebih baik daripada mereka yang mengolok-olok…”<small>QS. Al-Hujurat [49]: 11</small></div>
+<div class="card ayat">“…jauhilah banyak prasangka! Sesungguhnya sebagian prasangka itu dosa. Janganlah mencari-cari kesalahan orang lain dan janganlah ada di antara kamu yang menggunjing sebagian yang lain…”<small>QS. Al-Hujurat [49]: 12</small></div>
+</section>
+
+<section id="survei">
+<h2>Hasil Survei</h2>
+<p class="sub">Rata-rata skor 10 mahasiswa Universitas Andalas (skala 1–5). Hasil ini hanya menggambarkan responden dan belum mewakili seluruh mahasiswa.</p>
+<div class="card" id="bars"></div>
+<div class="card"><b>Rata-rata keseluruhan: 3,81</b> (kategori setuju). Aspek terendah ada pada kejujuran dan kebenaran informasi, itulah alasan fitur Cek Tabayyun dibuat.</div>
+</section>
+
+<footer>Produk hasil penelitian “Analisis Etika Komunikasi Mahasiswa di Media Sosial dalam Perspektif Ajaran Islam”<br>Ikhsanny Agisra Fikhmi · 2610952052 · Teknik Elektro, Universitas Andalas · Mata Kuliah Pendidikan Agama Islam</footer>
+</div>
+
+<script>
+var $=function(i){return document.getElementById(i)};
+// Cek Tabayyun
+var S=[["Cek sumbernya","Siapa yang membuat atau menyebarkannya? Apakah akun atau media itu jelas dan dapat dipercaya?"],["Cek tanggal dan konteks","Apakah informasi ini masih baru, atau berita lama yang diunggah ulang tanpa konteks?"],["Bandingkan dengan sumber lain","Apakah media atau pihak resmi lain melaporkan hal yang sama?"],["Cek foto, video, atau kutipan","Apakah gambar dan kutipannya asli, bukan editan atau potongan yang menyesatkan?"],["Tanya diri sendiri sebelum membagikan","Apakah ini bermanfaat, benar, dan tidak merugikan atau mempermalukan orang lain?"]];
+var st=$("steps");
+S.forEach(function(s,i){var l=document.createElement("label");l.className="chk";l.innerHTML='<input type="checkbox" data-i="'+i+'"><div><b>'+(i+1)+". "+s[0]+"</b><span>"+s[1]+"</span></div>";st.appendChild(l)});
+function upd(){var c=st.querySelectorAll("input:checked").length,v=$("vd");
+v.textContent=c===0?"Centang langkah di atas untuk melihat hasilnya.":c<3?"Belum aman ("+c+"/5). Tahan dulu, lakukan tabayyun sebelum membagikan.":c<5?"Hampir ("+c+"/5). Lengkapi langkah yang tersisa agar tidak menyesal kemudian.":"Lengkap (5/5). Informasi sudah diperiksa, silakan bagikan dengan bijak."}
+st.addEventListener("change",upd);
+// Generator pesan
+function greet(){var h=new Date().getHours();return h<11?"pagi":h<15?"siang":h<18?"sore":"malam"}
+$("gen").onclick=function(){
+var nm=$("nm").value.trim(),nim=$("nim").value.trim(),ds=$("ds").value.trim(),sp=$("sp").value,mk=$("mk").value.trim(),kp=$("kp").value,dt=$("dt").value.trim();
+if(!nm||!nim||!ds){alert("Lengkapi nama, NIM, dan nama dosen terlebih dahulu.");return}
+var t="Assalamu’alaikum warahmatullahi wabarakatuh. Selamat "+greet()+", "+sp+" "+ds+".\n\nPerkenalkan, saya "+nm+" (NIM "+nim+")"+(mk?", mahasiswa mata kuliah "+mk:"")+". Mohon izin, saya ingin "+kp+"."+(dt?"\n\n"+dt:"")+"\n\nDemikian yang dapat saya sampaikan. Mohon maaf mengganggu waktu "+sp+". Atas perhatian dan tanggapannya, saya ucapkan terima kasih.\n\nWassalamu’alaikum warahmatullahi wabarakatuh.";
+$("out").textContent=t;$("out").hidden=false;$("cp").hidden=false;
+var h=new Date().getHours(),w=$("hr");
+if(h>=21||h<6){w.textContent="Sekarang sudah larut. Sebaiknya kirim pesan ini pada jam wajar (sekitar pukul 07.00–20.00), dan hindari hari libur.";w.hidden=false}else w.hidden=true};
+$("cp").onclick=function(){var t=$("out").textContent,b=$("cp");
+function done(){b.textContent="Tersalin ✓";setTimeout(function(){b.textContent="Salin Pesan"},1800)}
+try{navigator.clipboard.writeText(t).then(done,fb)}catch(e){fb()}
+function fb(){try{var a=document.createElement("textarea");a.value=t;document.body.appendChild(a);a.select();document.execCommand("copy");a.remove();done()}catch(e){b.textContent="Blok teks lalu salin manual"}}};
+// Kuis
+var Q=[
+{q:"Kamu menerima pesan berantai di grup: “Kampus akan diliburkan seminggu, sebarkan!” Tanpa sumber jelas. Apa yang kamu lakukan?",o:["Langsung teruskan ke grup lain agar teman tahu","Cek pengumuman resmi kampus dulu sebelum membagikan","Abaikan saja tanpa memberi tahu siapa pun"],a:1,f:"Tepat. Ini penerapan tabayyun (QS. Al-Hujurat: 6): periksa kebenaran berita sebelum menyebarkannya agar tidak menimbulkan kekacauan."},
+{q:"Teman sekelasmu mengunggah pendapat yang menurutmu keliru. Bagaimana menanggapinya?",o:["Komentar “Bodoh banget, nggak mikir dulu”","Sampaikan pendapat berbeda dengan bahasa sopan dan alasan yang jelas","Screenshot lalu sebarkan untuk ditertawakan"],a:1,f:"Tepat. QS. Al-Hujurat: 11 melarang mengolok-olok dan mencela. Perbedaan pendapat disampaikan lewat diskusi yang santun, bukan serangan pribadi."},
+{q:"Beredar potongan video seorang senior yang tampak berbuat salah, tanpa konteks. Teman-temanmu mulai menghujat. Sikapmu?",o:["Ikut berkomentar agar tidak dibilang tidak peduli","Tidak menyimpulkan dulu dan tidak ikut menyebarkan sebelum konteks jelas","Menandai akun lain agar ikut membicarakannya"],a:1,f:"Tepat. QS. Al-Hujurat: 12 mengajarkan menjauhi prasangka dan tidak menggunjing. Potongan informasi belum cukup untuk menilai seseorang."},
+{q:"Kamu ingin menghubungi dosen lewat WhatsApp untuk menanyakan tugas. Pesan mana yang terbaik?",o:["“Pak, tugasnya apa? Kirim sekarang ya.” (pukul 23.30)","“Assalamu’alaikum Pak, saya Andi (NIM …), mohon izin menanyakan tugas minggu ini. Terima kasih.” (pukul 09.00)","“Pak?” lalu menunggu balasan"],a:1,f:"Tepat. Etika akademik: salam, perkenalan diri dengan nama dan NIM, tujuan jelas, bahasa sopan, dan waktu yang tepat."}];
+var qi=0,sc=0,qz=$("qz");
+function show(){if(qi>=Q.length){var m=sc===Q.length?"Luar biasa, kamu siap bermedia sosial dengan bijak!":sc>=2?"Bagus, tinggal diasah lagi.":"Yuk, ulangi dan baca lagi ayat-ayatnya.";qz.innerHTML="<b>Skor akhir: "+sc+"/"+Q.length+"</b><p>"+m+'</p><button id="rs">Ulangi Kuis</button>';$("rs").onclick=function(){qi=0;sc=0;show()};$("sc").textContent="";return}
+var x=Q[qi];$("sc").textContent="Soal "+(qi+1)+" dari "+Q.length+".";
+qz.innerHTML="<b>"+x.q+"</b>";
+x.o.forEach(function(t,i){var b=document.createElement("button");b.className="opt";b.textContent=t;b.onclick=function(){
+var all=qz.querySelectorAll(".opt");all.forEach(function(e,j){e.disabled=true;if(j===x.a)e.classList.add("ok")});
+if(i===x.a)sc++;else b.classList.add("no");
+var d=document.createElement("div");d.className="fb";d.textContent=(i===x.a?"Benar. ":"Kurang tepat. ")+x.f;qz.appendChild(d);
+var n=document.createElement("button");n.textContent=qi<Q.length-1?"Soal berikutnya":"Lihat skor";n.onclick=function(){qi++;show()};qz.appendChild(n)};qz.appendChild(b)})}
+show();
+// Survei
+var D=[["Kesantunan",4.00],["Etika akademik",3.85],["Kejujuran informasi",3.63],["Menghargai perbedaan",3.90],["Perspektif Islam",3.65]];
+D.forEach(function(d){var r=document.createElement("div");r.className="bar";r.innerHTML='<div class="n">'+d[0]+'</div><div class="t"><div class="f'+(d[1]<3.7?" low":"")+'" style="width:'+d[1]/5*100+'%">'+d[1].toFixed(2).replace(".",",")+"</div></div>";$("bars").appendChild(r)});
+</script>
+</body>
+</html>
